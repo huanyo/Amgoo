@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_white"
+    android:paddingBottom="@dimen/distance_5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"
+        android:background="@drawable/progress_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/distance_5" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                style="@style/font_gray_style_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text=" " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/img_user_icon"
+                    android:layout_width="@dimen/distance_25"
+                    android:layout_height="@dimen/distance_25"
+                    android:layout_marginRight="@dimen/distance_5"
+                    android:src="@drawable/ico_default_logo" />
+
+                <TextView
+                    android:id="@+id/tv_accept"
+                    style="@style/font_blue_style_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quest_none_resolved_bg"
+                    android:padding="3dp"
+                    android:text="未解决"
+                    android:textColor="@color/line_color"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_quest_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_5"
+            android:layout_marginTop="@dimen/distance_5"
+            android:text=" " />
+
+        <RelativeLayout
+            android:id="@+id/rl_question_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_answer_account"
+                style="@style/font_gray_style_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text=" " />
+
+            <LinearLayout
+                android:id="@+id/ll_answer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

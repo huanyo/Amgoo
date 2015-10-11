@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErweimaResultActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/top_bar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_margin="20dp"
+        android:text="你扫描的结果:"
+        android:textSize="@dimen/design_size_28" />
+
+    <TextView
+        android:id="@+id/erweima_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textColor="@color/trans_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

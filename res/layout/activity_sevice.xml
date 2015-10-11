@@ -1,0 +1,383 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    tools:context=".SeviceActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar_bg" >
+
+        <TextView
+            android:id="@+id/mTopBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="2dp"
+            android:text="服务"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/design_size_32" />
+
+        <TextView
+            android:id="@+id/mTopBarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fx_saoyisao"
+            android:drawablePadding="3dp"
+            android:paddingLeft="3dp"
+            android:text=""
+            android:textColor="@drawable/fanhui"
+            android:textSize="10sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewt12"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/mTopBar"
+        android:layout_marginTop="15dp"
+        android:background="@color/divide_line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewt12"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/lin_seviceadress"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/btn_press_bg_white_and_gray" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/service_network" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="@string/serviceground"
+                android:textColor="@color/menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/my_top_btn_data" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/lin_seviceadress"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:id="@+id/lin_salepolicy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/view1"
+            android:background="@drawable/btn_press_bg_white_and_gray" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/service_policy" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="@string/afterservice"
+                android:textColor="@color/menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/my_top_btn_data" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/lin_salepolicy"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:id="@+id/lin_phonequery"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/view2"
+            android:background="@drawable/btn_press_bg_white_and_gray" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/true_false" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="@string/turequery"
+                android:textColor="@color/menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/my_top_btn_data" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/relativeout1"
+        android:background="@color/divide_line" />
+
+    <View
+        android:id="@+id/viewf5"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="16dp"
+        android:background="@color/divide_line" />
+
+    <LinearLayout
+        android:id="@+id/lin_customersuggest"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/viewf5"
+        android:background="@drawable/btn_press_bg_white_and_gray" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/feeback" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="@string/userface"
+            android:textColor="@color/menu_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/my_top_btn_data" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/lin_customersuggest"
+        android:background="@color/divide_line" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/view8"
+        android:layout_marginTop="15dp"
+        android:background="@color/divide_line" />
+
+    <LinearLayout
+        android:id="@+id/lin_agmoo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/view10"
+        android:background="@drawable/btn_press_bg_white_and_gray" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/log" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="@string/amgoonet"
+            android:textColor="@color/menu_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/my_top_btn_data" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/lin_agmoo"
+        android:background="@color/divide_line" />
+
+    <View
+        android:id="@+id/viewg6"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/view4"
+        android:layout_marginTop="16dp"
+        android:background="@color/divide_line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewg6"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/lin_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/btn_press_bg_white_and_gray" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="@string/facebook"
+                android:textColor="@color/menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/my_top_btn_data" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@+id/lin_facebook"
+            android:layout_marginLeft="60dp"
+            android:background="@color/divide_line" />
+
+        <LinearLayout
+            android:id="@+id/lin_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/view5"
+            android:background="@drawable/btn_press_bg_white_and_gray" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/twitter" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="@string/twitter"
+                android:textColor="@color/menu_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/my_top_btn_data" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/relativeout2"
+        android:background="@color/divide_line" />
+
+</RelativeLayout>

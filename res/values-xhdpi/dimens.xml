@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="design_size_28">18.0sp</dimen>
+    <!-- 四个角 -->
+    <dimen name="distance_8">8dp</dimen>
+    <dimen name="distance_9">9dp</dimen>
+    <dimen name="distance_25">25dp</dimen>
+    <dimen name="distance_27">27dp</dimen>
+    <dimen name="distance_110">120dp</dimen>
+    <dimen name="sideBarTextSize">15sp</dimen>
+    <dimen name="design_size_16">12.0sp</dimen>
+    <dimen name="design_size_10">10.0sp</dimen>
+    <dimen name="search_edit_height">40dp</dimen>
+    <dimen name="searchTaobaoImg_height">38.5dp</dimen>
+    <dimen name="distance22">22dp</dimen>
+    <dimen name="bannerHeight">120dp</dimen>
+    <dimen name="store_logo_height">40dp</dimen>
+    <dimen name="disance_40">40dp</dimen>
+    <dimen name="distance_37">37dp</dimen>
+    <dimen name="distance_13">13dp</dimen>
+    <dimen name="mallImagewh">55dp</dimen>
+    <dimen name="zdm_product_width_and_heigh">175dp</dimen>
+    <dimen name="zdm_product_height">230dp</dimen>
+    <dimen name="discance_today_main">180dp</dimen>
+    <dimen name="onedp">0.5dp</dimen>
+
+</resources>

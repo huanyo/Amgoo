@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErweimaResultActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/top_bar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_margin="20dp"
+        android:text="您即将访问的网址"
+        android:textSize="@dimen/design_size_28" />
+
+    <TextView
+        android:id="@+id/erweima_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textColor="@color/trans_color" />
+
+    <include
+        android:id="@+id/action_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@+id/erweima_result"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        layout="@layout/action_split_line" />
+
+    <TextView
+        android:id="@+id/erweima_if_guanfan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_split_line"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="该网址非AMGOO官方链接，\n 是否继续访问？"
+        android:textSize="@dimen/design_size_28" />
+
+    <Button
+        android:id="@+id/continueVisit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/erweima_if_guanfan"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_common_blue"
+        android:text="继续访问"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

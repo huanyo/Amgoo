@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_blue"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/include_titlebar_item" />
+    </LinearLayout>
+
+    <com.lingtoo.carcorelite.ui.view.XListView
+        android:id="@+id/list_consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout1"
+        android:background="@drawable/travel_bg"
+        android:divider="@null" >
+    </com.lingtoo.carcorelite.ui.view.XListView>
+
+    <TextView
+        android:id="@+id/tv_none_data"
+        style="@style/font_black_style_16"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/LinearLayout1"
+        android:gravity="center"
+        android:text="暂无咨询问题."
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_start_consult"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/distance_20"
+        android:background="@drawable/voice_sound"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/font_white_style_14_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/btn_consult_bg"
+            android:text="咨询" />
+    </RelativeLayout>
+
+</RelativeLayout>
